@@ -1,0 +1,15 @@
+﻿@model WebApplication1.Models.User
+@{ ViewBag.Title = "Register"; }
+
+@ViewBag.sName
+<br />
+@ViewBag.message
+@using (Html.BeginForm("RegisterPage", "Home"))
+{
+<input type="submit" value="Back To Register" />
+}
+
+@using (Html.BeginForm("LoginPage", "Home"))
+{
+<input type="submit" value="UserLogin" />
+}

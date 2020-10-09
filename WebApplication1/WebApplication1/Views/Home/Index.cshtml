@@ -1,0 +1,18 @@
+﻿@{ ViewData["Title"] = "Home Page"; }
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Welcome To MVC Web App.</a>.</p>
+
+    @using (Html.BeginForm("LoginPage", "Home"))
+    {
+<input type="submit" name="Login" value="Login" />}
+
+
+    @using (Html.BeginForm("RegisterPage", "Home"))
+    {
+<input type="submit" name="Register" value="Register" />}
+</div>
+
+
+
